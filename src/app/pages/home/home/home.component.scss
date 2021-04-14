@@ -1,0 +1,18 @@
+:host {
+  .channels-list {
+    a.channel-item {
+      display: block;
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  .loading-data {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+}

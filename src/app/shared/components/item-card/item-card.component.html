@@ -1,0 +1,14 @@
+<mat-card class="channel-card" *ngIf="data">
+  <mat-card-header>
+    <div class="channel-logo">
+      <img [src]="data.logo" [alt]="data.title">
+    </div>
+    <div class="channel-title">
+      <mat-card-title>{{data.title}}</mat-card-title>
+      <mat-card-subtitle>{{data.wave}}</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="channel-description">{{data.description}}</p>
+  </mat-card-content>
+</mat-card>

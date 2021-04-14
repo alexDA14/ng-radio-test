@@ -1,0 +1,21 @@
+<header>
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <a [routerLink]="['/']" class="logo-link">Angular <mat-icon>cast</mat-icon></a>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<div class="loader-overlay" *ngIf="(loading | async)">
+  <mat-spinner class="main-spinner" color="primary"></mat-spinner>
+</div>

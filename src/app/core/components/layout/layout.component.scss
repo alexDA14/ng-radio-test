@@ -1,0 +1,24 @@
+:host {
+  display: block;
+  height: 100vh;
+
+  header {
+    height: 64px;
+
+    a.logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #FFFFFF;
+      margin-left: 12px;
+
+      mat-icon {
+        margin-left: 6px;
+      }
+    }
+
+    .example-spacer {
+      margin-left: auto;
+    }
+  }
+}

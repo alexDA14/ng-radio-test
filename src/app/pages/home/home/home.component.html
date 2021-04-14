@@ -1,0 +1,17 @@
+<div class="scroll-container"
+     infiniteScroll
+     [infiniteScrollDistance]="2"
+     [infiniteScrollThrottle]="50"
+     (scrolled)="onScrollDown()"
+     [scrollWindow]="false">
+  <div class="channels-list">
+    <a class="channel-item"
+       *ngFor="let channel of channels"
+       [routerLink]="['/channel-details', channel.id]">
+      <ng-radio-item-card [data]="channel"></ng-radio-item-card>
+    </a>
+  </div>
+  <div class="loading-data" *ngIf="isLoading">
+    <mat-spinner [diameter]="40" [strokeWidth]="2"></mat-spinner>
+  </div>
+</div>

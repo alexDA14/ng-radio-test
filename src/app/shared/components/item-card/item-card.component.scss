@@ -1,0 +1,30 @@
+:host {
+  display: block;
+
+  .channel-card {
+    mat-card-header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+
+      &::ng-deep {
+        .mat-card-header-text {
+          margin: 0;
+        }
+      }
+
+      .channel-logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        margin-right: 12px;
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
