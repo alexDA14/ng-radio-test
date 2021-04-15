@@ -1,18 +1,20 @@
 <div class="channel-details-container" *ngIf="channelData">
   <div class="channel-header">
-    <div class="logo-container">
-      <img [src]="channelData.logo" [alt]="channelData.title">
-    </div>
-    <div class="channel-title-container">
-      <h1 class="channel-title">{{channelData.title}}</h1>
-      <span class="channel-wave">{{channelData.wave}}</span>
-    </div>
+    <a [href]="channelData.website" class="channel-website" target="_blank">
+      <div class="logo-container">
+        <img [src]="channelData.logo" [alt]="channelData.title">
+      </div>
+      <div class="channel-title-container">
+        <h1 class="channel-title">{{channelData.title}}</h1>
+        <span class="channel-wave">{{channelData.wave}}</span>
+      </div>
+    </a>
   </div>
   <div class="channel-info-container">
-    <a [href]="channelData.website" class="channel-website" target="_blank">Visit Website</a>
     <p class="channel-description">{{channelData.description}}</p>
   </div>
   <div class="player">
+    <h2 class="channel-title">Слушать радиостанцию: "{{channelData.title}}" онлайн</h2>
     <audio controls [src]="channelData.stream"></audio>
   </div>
 </div>

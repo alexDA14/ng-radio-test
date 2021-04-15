@@ -1,0 +1,28 @@
+:host {
+  display: block;
+
+  .channel-details-container {
+    padding: 24px 30px;
+
+    a.channel-website {
+      display: inline-flex;
+
+      .logo-container {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        margin-right: 18px;
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+
+    .channel-info-container {
+      padding: 24px 0;
+    }
+  }
+}

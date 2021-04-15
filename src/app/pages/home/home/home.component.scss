@@ -2,10 +2,13 @@
   .channels-list {
     a.channel-item {
       display: block;
-      text-decoration: none;
 
       &:not(:last-child) {
         margin-bottom: 18px;
+      }
+
+      &:hover {
+        text-decoration: none;
       }
     }
   }
